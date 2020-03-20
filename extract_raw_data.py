@@ -73,11 +73,15 @@ if __name__ == "__main__":
     if len(sys.argv) == 2:
         emotion = str(sys.argv[1])
         if emotion in emotion_list:
+            print("The dataset is generated in the path shown as below: ")
+            print(os.getcwd()+ "/Raw_data/")
             tweets_to_data_frame(emotion)
         else:
             print("One of the input arguement is not correct, please try again!")
             
     if len(sys.argv) == 1:
+        print("The dataset is generated in the path shown as below: ")
+        print(os.getcwd()+ "/Raw_data/")
         tweets_to_data_frame("happy")
         tweets_to_data_frame("anger")
         tweets_to_data_frame("surprise")

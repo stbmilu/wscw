@@ -4,6 +4,7 @@ import string
 import nltk
 import sys
 import pymongo
+import time
 from string import ascii_lowercase, punctuation
 from pymongo import MongoClient
 from autocorrect import spell
@@ -14,7 +15,7 @@ from autocorrect import spell
 MONGO_HOST = 'mongodb://localhost:27017/'
 client = MongoClient(MONGO_HOST)
 db1 = client.emo_process
-db2 = client.final_tweet
+db2 = client.final_tweets
 
 '''db_collections of all emo_processed classes'''
 fear1 = db1.fear
@@ -144,35 +145,52 @@ if __name__ == "__main__":
 
     if len(sys.argv) == 2:
         emotion = str(sys.argv[1])
-        process_final_tweets_and_remove_duplicates(db1[emotion], db2[emotion], emotion, 150)
+        try:
+            process_final_tweets_and_remove_duplicates(db1[emotion], db2[emotion], emotion, 150)
+        except UnboundLocalError:
+            print("-------------------------------warning----------------------------------")
+            print(emotion + " raw data is empty! Please collect more data.")
 
     if len(sys.argv) == 1:
         try:
             process_final_tweets_and_remove_duplicates(db1["fear"], db2["fear"], "fear", 150)
         except UnboundLocalError:
-            print("Fear raw data is empty! Please collect more data.")
+            print("-------------------------------warning----------------------------------")
+            print("Fear raw data is empty! Please collect more data. Next class will be processed in 10 seconds")
+            time.sleep(10)
 
         try:
             process_final_tweets_and_remove_duplicates(db1["happy"], db2["happy"], "happy", 150)
         except UnboundLocalError:
-            print("Happy raw data is empty! Please collect more data.")
+            print("-------------------------------warning----------------------------------")
+            print("Happy raw data is empty! Please collect more data. Next class will be processed in 10 seconds")
+            time.sleep(10)
 
         try:
             process_final_tweets_and_remove_duplicates(db1["anger"], db2["anger"], "anger", 150)
         except UnboundLocalError:
-            print("Anger raw data is empty! Please collect more data.")
+            print("-------------------------------warning----------------------------------")
+            print("Anger raw data is empty! Please collect more data. Next class will be processed in 10 seconds")
+            time.sleep(10)
 
         try:
             process_final_tweets_and_remove_duplicates(db1["surprise"], db2["surprise"], "surprise", 150)
         except UnboundLocalError:
-            print("Surprise raw data is empty! Please collect more data.")
+            print("-------------------------------warning----------------------------------")
+            print("Surprise raw data is empty! Please collect more data. Next class will be processed in 10 seconds")
+            time.sleep(10)
 
         try:
             process_final_tweets_and_remove_duplicates(db1["excitement"], db2["excitement"], "excitement", 150)
         except UnboundLocalError:
-            print("Excitement raw data is empty! Please collect more data.")
+            print("-------------------------------warning----------------------------------")
+            print("Excitement raw data is empty! Please collect more data. Next class will be processed in 10 seconds")
+            time.sleep(10)
 
         try:
             process_final_tweets_and_remove_duplicates(db1["pleasant"], db2["pleasant"], "pleasant", 150)
         except UnboundLocalError:
+            print("-------------------------------warning----------------------------------")
             print("Pleasant raw data is empty! Please collect more data.")
+            time.sleep(10)
+

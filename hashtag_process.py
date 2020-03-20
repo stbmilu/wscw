@@ -213,6 +213,9 @@ if __name__ == "__main__":
         else:
             print("Emotion class is not in the required list, please try again!")
 
+    if len(sys.argv) == 1:
+        print("Please enter a emotion name in commond line, please try again!")
+
     
     
 

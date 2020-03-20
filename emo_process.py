@@ -112,11 +112,16 @@ def emo_process(class_name):
 
 
 if __name__ == "__main__":
+    emotion_list = ["happy", "anger", "surprise", "pleasant", "excitement", "fear"]
 
+    if len(sys.argv) == 1:
+        for class_name in emotion_list:
+            emo_process(class_name)
 
-
-    emotion = str(sys.argv[1])
-    emo_process(emotion)
+    if len(sys.argv) == 2:
+        emotion = str(sys.argv[1])
+        emo_process(emotion)
+        
 
 
 
