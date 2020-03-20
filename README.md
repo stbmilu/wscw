@@ -23,8 +23,9 @@ For data fetch. Both streaming API and rest API can be used in this project.<br>
 The program should be run in the following order:<br><br>
 1.collectdata.py. (specify a emotion and a data fetch method in commond line) fetch method includes "rest" and "stream".<br>
   This project include two data fetch method in this stript.<br>
-  e.g. python3 collectdata.py happy rest<br>
-
+```
+  e.g. python3 collectdata.py happy rest
+```
 
 2.hashtag_process.py. (specify a emotion or a method) method inclues "rest", "stream" and "mix", which indicates the database.<br>
 Since some user might use hybird approach to fetch data(both rest and stream)<br>
@@ -66,3 +67,5 @@ After data process, our data can be analysis by the following scripts:<br><br>
 4.cs_results_analysis.py ---> analysis the crowdsourcing reports<br>
 
 ## Final Data
+The raw data and final results has been convert to csv file.
+If you want the Mongodb database and collections. Open database file
