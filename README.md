@@ -5,7 +5,8 @@ The database used in this project is MONGODB, MONGO_HOST = 'mongodb://localhost:
 
 The program should be run in the following order:
 
-1.collectdata.py. (specify a emotion and a data fetch method in commond line) fetch method includes "rest" and "stream".This project include two data fetch method in this stript.
+1.collectdata.py. (specify a emotion and a data fetch method in commond line) fetch method includes "rest" and "stream".
+This project include two data fetch method in this stript.
   e.g. python3 collectdata.py happy rest
 2.hashtag_process.py. (specify a emotion or a method) method inclues "rest", "stream" and "mix", which indicates the database.Since some user might use hybird approach to fetch data(both rest and stream)
   e.g. python3 hashtag_process.py happy rest. 
