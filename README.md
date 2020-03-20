@@ -1,18 +1,13 @@
-# Project Title
-
+# Social Media Emotion Data Set
 This is COMPSCI 5078 web science coursework
 
 ## Description
-
 This research aims at collecting 900 reasonably clean tweets with 150 per class.
-Emotion class are happy, surprise, excitement, fear, anger and pleasant
-
-### Dependencies
+Emotion class are happy, surprise, excitement, fear, anger and pleasant.
+### Database
 The database used in this research is MONGODB.<br>
 MONGO_HOST = 'mongodb://localhost:27017/'<br>
-
 ### Dependencies
-
 * The main libaray used in this project are:
 * tweepy	    3. 8. 0	      For Data fetch
 * nltk	        3. 4. 5	      For Text process
