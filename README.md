@@ -23,27 +23,32 @@ For data fetch. Both streaming API and rest API can be used in this project.<br>
 The program should be run in the following order:<br><br>
 1.collectdata.py. (specify a emotion and a data fetch method in commond line) fetch method includes "rest" and "stream".<br>
   This project include two data fetch method in this stript.<br>
-  e.g. python3 collectdata.py happy rest<br><br><br>
+  e.g. python3 collectdata.py happy rest<br><br>
 
 
 2.hashtag_process.py. (specify a emotion or a method) method inclues "rest", "stream" and "mix", which indicates the database.<br>
 Since some user might use hybird approach to fetch data(both rest and stream)<br>
+```
   e.g. python3 hashtag_process.py happy rest.<br>
   e.g. python3 hashtag_process.py happy.<br>
+```
   if you don't include the method, this program will use "rest" database by default.<br>
 
+3.emo_process.py (you can alterntively specify a emotion class, or process all classes by default.)<br>
 ```
- 3.emo_process.py (you can alterntively specify a emotion class, or process all classes by default.)
   e.g. python3 emo_process.py happy
   e.g. python3 emo_process.py 
 ```
 
-* 4.text_process.py (you can alterntively specify a emotion class, or process all classes by default.)
-*  e.g. python3 text_process.py happy
-*  e.g. python3 text_process.py
-*  Notes:if you see the error like nltk.download('punkt'), please run fix_nltk.py, and download the language package you want.
+4.text_process.py (you can alterntively specify a emotion class, or process all classes by default.)<br>
+```
+  e.g. python3 text_process.py happy
+  e.g. python3 text_process.py
+```
+Notes:if you see the error like nltk.download('punkt'), please run fix_nltk.py, and download the language package you want.<br>
 
-* After data process, our data can be analysis by the following scripts:
+## Analysis results
+After data process, our data can be analysis by the following scripts:
 * 1.cs_to_csv.py ---> generates 120 tweets for crowdsourcing, make sure you have at least 20 tweets per emotion collection.
 
 * 2.extract_final_results.py ---> extract final 900 tweets with both orignial text and processed text, the database used is final_tweets.
