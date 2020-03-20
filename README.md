@@ -32,9 +32,11 @@ Since some user might use hybird approach to fetch data(both rest and stream)<br
   e.g. python3 hashtag_process.py happy.<br>
   if you don't include the method, this program will use "rest" database by default.<br>
 
-* 3.emo_process.py (you can alterntively specify a emotion class, or process all classes by default.)
-*  e.g. python3 emo_process.py happy
-*  e.g. python3 emo_process.py 
+```
+ 3.emo_process.py (you can alterntively specify a emotion class, or process all classes by default.)
+  e.g. python3 emo_process.py happy
+  e.g. python3 emo_process.py 
+```
 
 * 4.text_process.py (you can alterntively specify a emotion class, or process all classes by default.)
 *  e.g. python3 text_process.py happy
