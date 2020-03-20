@@ -20,10 +20,10 @@ Emotion class are happy, surprise, excitement, fear, anger and pleasant
 
 ## Getting Started
 For data fetch. Both streaming API and rest API can be used in this project.<br>
-The program should be run in the following order:<br>
+The program should be run in the following order:<br><br>
 1.collectdata.py. (specify a emotion and a data fetch method in commond line) fetch method includes "rest" and "stream".<br>
-This project include two data fetch method in this stript.<br>
-e.g. python3 collectdata.py happy rest<br>
+  This project include two data fetch method in this stript.<br>
+  e.g. python3 collectdata.py happy rest<br>
 
 * 2.hashtag_process.py. (specify a emotion or a method) method inclues "rest", "stream" and "mix", which indicates the database.
 * Since some user might use hybird approach to fetch data(both rest and stream)
