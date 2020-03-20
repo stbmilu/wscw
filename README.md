@@ -23,13 +23,14 @@ For data fetch. Both streaming API and rest API can be used in this project.<br>
 The program should be run in the following order:<br><br>
 1.collectdata.py. (specify a emotion and a data fetch method in commond line) fetch method includes "rest" and "stream".<br>
   This project include two data fetch method in this stript.<br>
-  e.g. python3 collectdata.py happy rest<br>
+  e.g. python3 collectdata.py happy rest<br><br><br>
 
-* 2.hashtag_process.py. (specify a emotion or a method) method inclues "rest", "stream" and "mix", which indicates the database.
-* Since some user might use hybird approach to fetch data(both rest and stream)
-*  e.g. python3 hashtag_process.py happy rest. 
-*  e.g. python3 hashtag_process.py happy
-*  if you don't include the method, this program will use "rest" database by default.
+
+2.hashtag_process.py. (specify a emotion or a method) method inclues "rest", "stream" and "mix", which indicates the database.<br>
+Since some user might use hybird approach to fetch data(both rest and stream)<br>
+  e.g. python3 hashtag_process.py happy rest.<br>
+  e.g. python3 hashtag_process.py happy.<br>
+  if you don't include the method, this program will use "rest" database by default.<br>
 
 * 3.emo_process.py (you can alterntively specify a emotion class, or process all classes by default.)
 *  e.g. python3 emo_process.py happy
