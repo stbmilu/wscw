@@ -8,6 +8,10 @@ This research aims at collecting 900 reasonably clean tweets with 150 per class.
 Emotion class are happy, surprise, excitement, fear, anger and pleasant
 
 ### Dependencies
+The database used in this research is MONGODB.<br>
+MONGO_HOST = 'mongodb://localhost:27017/'<br>
+
+### Dependencies
 
 * The main libaray used in this project are:
 * tweepy	    3. 8. 0	      For Data fetch
