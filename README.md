@@ -67,4 +67,7 @@ After data process, our data can be analysis by the following scripts:<br><br>
 
 ## Final Data
 The raw data and final results has been convert to csv file.
+For the 120 data in crowdsourcing, the address is wscw/Final_results/crowdsourcing_results/emotion_dataset.csv
+For the crowdsourcing analysis, the address is wscw/Final_results/crowdsourcing_results/crowdsourcing_analysis.csv
+For the crowdsourcing report, the one used in analysis and report is f1558973_full_report_updated.csv
 If you want the Mongodb database and collections. Open database file
